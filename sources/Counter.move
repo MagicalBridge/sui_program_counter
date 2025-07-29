@@ -13,9 +13,9 @@ module my_counter::counter {
     // ctx参数提供交易上下文信息，包括发送者地址等
     public entry fun create(ctx: &mut sui::tx_context::TxContext) {
         // 创建Counter结构体实例，初始化所有字段
-        let counter = Counter {
+        let counter: Counter = Counter {
             // 使用sui::object::new创建新的唯一对象ID
-            id: sui::object::new(ctx),
+            id: sui::object::new(ctx),  
             // 将计数器初始值设为0
             value: 0,
         };
@@ -43,6 +43,6 @@ module my_counter::counter {
     // 注意：这不是entry函数，只能被其他Move代码调用
     public fun get_value(counter: &Counter): u64 {
         // 返回计数器的当前值
-        counter.value
+        return counter.value
     }
 }
