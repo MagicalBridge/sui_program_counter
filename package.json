@@ -9,7 +9,10 @@
     "dev": "ts-node",
     "deploy": "ts-node scripts/deploy.ts",
     "deploy:testnet": "ts-node scripts/deploy.ts testnet",
-    "deploy:devnet": "ts-node scripts/deploy.ts devnet"
+    "deploy:devnet": "ts-node scripts/deploy.ts devnet",
+    "upgrade": "ts-node scripts/upgrade.ts",
+    "upgrade:testnet": "ts-node scripts/upgrade.ts testnet",
+    "upgrade:devnet": "ts-node scripts/upgrade.ts devnet"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
