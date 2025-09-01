@@ -40,7 +40,7 @@ my_counter/
 ## 环境要求
 
 - Node.js >= 18
-- Sui CLI >= 1.0
+- Sui CLI >= 1.50.0
 - TypeScript >= 5.0
 
 ## 安装和设置
@@ -49,7 +49,7 @@ my_counter/
 
 ```bash
 # 安装Node.js依赖
-npm install
+pnpm install
 
 # 确保Sui CLI已安装
 sui --version
